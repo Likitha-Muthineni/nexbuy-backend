@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: nexbuy-backend
+    env: java
+    buildCommand: "./mvnw clean package -DskipTests"
+    startCommand: "java -jar target/*.jar"
+    plan: free
